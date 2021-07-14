@@ -20,7 +20,7 @@ class OIDCSecurityManager(OIDCSecurityManagerMixin, SecurityManager):
 
 
 try:
-    from airflow.www_rbac.security import AirflowSecurityManager
+    from airflow.www.security import AirflowSecurityManager
 
     class AirflowOIDCSecurityManager(OIDCSecurityManagerMixin,
                                      AirflowSecurityManager):
